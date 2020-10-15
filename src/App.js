@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Header from "./Components/Header/Header";
-//import TwitterCard from "./Components/TwitterCard/TwitterCard";
 import Wrapper from "./Components/Wrapper/Wrapper";
+import MainCopy from "./Components/MainCopy/MainCopy";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 
 class App extends Component {
   render() {
@@ -14,6 +13,7 @@ class App extends Component {
       <div className="App">
         <Wrapper>
           <Header />
+          <MainCopy />
           </Wrapper>
       </div>
     )
