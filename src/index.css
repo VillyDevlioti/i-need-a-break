@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "BNRomaineRegular";
+
+  src: url("./fonts/BNRomaine.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/BNRomaine.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MayenneSans-Regular";
+
+  src: url("./fonts/MayenneSansRegular.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/MayenneSansRegular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
