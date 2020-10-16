@@ -1,19 +1,12 @@
-.credits-row{
+.footer-row{
     width: auto;
     text-align: left;
     font-style: normal;
     font-weight: 400;
     color: #0038FF;
     font-family: "BNRomaineRegular";
+    font-size: 18px;
+    line-height: 17px;
+    text-transform: capitalize;
     padding: 5% 5%;
-}
-
-.bigger-credit {
-    font-size: 36px;
-    line-height: 35px;
-}
-
-.small-credit {
-    font-size: 24px;
-    line-height: 23px;
 }
