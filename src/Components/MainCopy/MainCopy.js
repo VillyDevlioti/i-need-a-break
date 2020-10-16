@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Row from 'react-bootstrap/Row';
 import "./MainCopy.css";
 
 
-const MainCopy = props => 
+const MainCopy = () => 
     <Row className="main-copy">
         <h1><p>From some New Yorkers to you, we want to make our city a better place, one vote at a time. 
         That means being informed and using our power to change things for the better.</p>
