@@ -1,10 +1,10 @@
-  .video-row {
+.video-row {
     width: auto;
     position: relative;
     margin: 0;  
   }
 
-  .video-text {
+.video-text {
     font-family: "BNRomaineRegular";
     text-transform: uppercase;
     font-size: 28px;
@@ -12,6 +12,26 @@
     color: #0038FF;
   }
 
-  .gNeMwR {
+.gNeMwR {
     border: 0;
   }
+
+.video-react-icon-play-arrow:before, .video-react .video-react-bezel .video-react-bezel-icon-play:before, .video-react .video-react-play-control:before, .video-react .video-react-big-play-button:before {
+    /*visibility: hidden;*/
+}
+
+.video-react:hover .video-react-big-play-button, .video-react .video-react-big-play-button:focus {
+  outline: 0;
+  border-color: #fff;
+  background-color: #73859f;
+  background-color: rgba(115, 133, 159, 0.5);
+  transition: all 0s;
+}
+
+.video-react .video-react-control:before, .video-react .video-react-big-play-button:before {
+  position: absolute!important;
+  top: 0!important;
+  right: 1%!important;
+  width: 100%;
+  height: 100%;
+}
