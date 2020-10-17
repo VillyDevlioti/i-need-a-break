@@ -7,9 +7,9 @@ import "./Tooltips.css";
 class Tooltips extends Component {
 	render() {
 		return (
-			<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Tooltip!</Tooltip>}>
+			<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Hit the button as many times throughout Election Day you need to.</Tooltip>}>
 				<span className="d-inline-block">
-					<Button disabled style={{ pointerEvents: 'none' }}>
+					<Button className="button-class" disabled style={{ pointerEvents: 'none' }}>
 						i
     				</Button>
 				</span>

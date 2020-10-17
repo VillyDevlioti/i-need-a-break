@@ -9,12 +9,10 @@ class VideoHolder extends Component {
     render () {
         //let videoChoice = this.props.videoChoice;  
         return (
-        <div>
-            <Row className="header-row header-text">
+            <Row className="video-row video-text">
                 <Tooltips />
                 <Player playsInline poster="/assets/poster.png" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />  
             </Row>
-        </div>
         );
     }
 }

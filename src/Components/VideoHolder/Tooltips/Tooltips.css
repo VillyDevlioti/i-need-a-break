@@ -1,7 +1,27 @@
 .d-inline-block {
-    position: sticky;
+    position: absolute;
     z-index: 1;
     left: 2%;
-    top: 50%;
-    margin-bottom: 1%;
+    top: 85%;
+}
+
+#tooltip-disabled .tooltip-inner {
+    background-color: #0038FF;
+    width: 70%;
+    margin-left: 15%;
+    font-family: "BNRomaineRegular";
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #000!important;
+    background-color:#fff!important;
+    border-color: #fff!important;
+    border-radius: 50%!important;
+    padding: 10% 40%;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 1;
 }
