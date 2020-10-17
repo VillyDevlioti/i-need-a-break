@@ -1,7 +1,7 @@
 .d-inline-block {
     position: absolute;
     z-index: 1;
-    left: 2%;
+    right: 2%;
     top: 85%;
 }
 
@@ -16,10 +16,11 @@
 
 .btn-primary.disabled, .btn-primary:disabled {
     color: #000!important;
+    text-align: center;
     background-color:#fff!important;
     border-color: #fff!important;
     border-radius: 50%!important;
-    padding: 10% 40%;
+    padding: 0 40%!important;
 }
 
 .btn.disabled, .btn:disabled {
