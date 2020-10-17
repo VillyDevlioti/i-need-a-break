@@ -1,17 +1,18 @@
 .d-inline-block {
     position: absolute;
     z-index: 1;
-    right: 2%;
-    top: 85%;
+    right: 1vw;
+    top: 50vw;
 }
 
 #tooltip-disabled .tooltip-inner {
     background-color: #0038FF;
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10vw;
     font-family: "BNRomaineRegular";
-    font-size: 20px;
-    line-height: 21px;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+    z-index: 1;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -19,10 +20,14 @@
     text-align: center;
     background-color:#fff!important;
     border-color: #fff!important;
-    border-radius: 50%!important;
-    padding: 0 40%!important;
+    border-radius: 5.2vw!important;
+    padding: 0.2vw 1vw!important;
 }
 
 .btn.disabled, .btn:disabled {
     opacity: 1;
+}
+
+.tooltip .arrow::before {
+    visibility: hidden!important;
 }

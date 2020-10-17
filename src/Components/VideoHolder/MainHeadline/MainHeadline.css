@@ -1,0 +1,19 @@
+.main-headline{
+    position: absolute;
+    text-align: center;
+    padding: 12vw 10vw;
+    color: white;
+    z-index: 5;
+    font-family: "MayenneSans-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10vw;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.i {
+    color: #DBFF00;
+}
+
