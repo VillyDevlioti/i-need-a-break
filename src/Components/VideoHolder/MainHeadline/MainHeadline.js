@@ -8,7 +8,8 @@ class MainHeadline extends Component {
         //let videoChoice = this.props.videoChoice;  
         return (
             <Col>
-                <p class="main-headline"><span class="i">I</span> NEED A BREAK</p>
+                <p class="main-headline"><span class="i">I </span><span class="need-a">NEED A </span> 
+                <span class="break">BREAK</span></p>
             </Col>
         );
     }
