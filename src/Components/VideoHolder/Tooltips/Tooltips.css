@@ -1,0 +1,7 @@
+.d-inline-block {
+    position: sticky;
+    z-index: 1;
+    left: 2%;
+    top: 50%;
+    margin-bottom: 1%;
+}

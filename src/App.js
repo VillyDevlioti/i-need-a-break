@@ -12,6 +12,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'video-react/dist/video-react.css';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoChoice : 0
+    };
+    //this.callTwitterApi = this.callTwitterApi.bind(this);
+  }
+
   render() {
     const stream = 5;
     return (
