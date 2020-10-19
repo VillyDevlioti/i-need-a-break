@@ -17,7 +17,7 @@
   }
 
 .video-react-icon-play-arrow:before, .video-react .video-react-bezel .video-react-bezel-icon-play:before, .video-react .video-react-play-control:before, .video-react .video-react-big-play-button:before {
-    /*visibility: hidden;*/
+    visibility: hidden!important;
 }
 
 .video-react:hover .video-react-big-play-button, .video-react .video-react-big-play-button:focus {
@@ -26,6 +26,7 @@
   background-color: #73859f;
   background-color: rgba(115, 133, 159, 0.5);
   transition: all 0s;
+  visibility: hidden!important;
 }
 
 .video-react .video-react-control:before, .video-react .video-react-big-play-button:before {
@@ -34,4 +35,9 @@
   right: 1%!important;
   width: 100%;
   height: 100%;
+  visibility: hidden!important;
+}
+
+.video-react .video-react-big-play-button {
+  visibility: hidden;
 }

@@ -1,7 +1,8 @@
 .main-headline{
     position: absolute;
     text-align: center;
-    padding: 12vw 10vw;
+    top: 20vw;
+    left: 5vw;
     color: white;
     z-index: 5;
     font-family: "MayenneSans-Regular";
