@@ -1,10 +1,12 @@
 [
     {
         "id": 1,
-        "video": "./videos/video1.mp4"
+        "source": "./videos/video1.mp4",
+        "author": "Name 1"
     },
     {
         "id": 2,
-        "video": "./videos/video2.mp4"
+        "source": "./videos/video2.mp4",
+        "author": "Name 2"
     }
 ]
