@@ -1,9 +1,7 @@
 .wrapper {
-    /*padding-top: 1%;
-    padding-bottom: 40%;*/
+    margin: 0 -1vw;
     height: 100%;
     display: flex;
-    /*flex-flow: row wrap;*/
     justify-content: space-around;
     overflow: auto;
     background-size: cover;
