@@ -4,18 +4,13 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import "./Tooltips.css";
 
-class Tooltips extends Component {
-	render() {
-		return (
-			<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Hit the button as many times throughout Election Day you need to.</Tooltip>}>
-				<span className="d-inline-block">
-					<Button className="button-class" disabled style={{ pointerEvents: 'none' }}>
-						i
-    				</Button>
-				</span>
-			</OverlayTrigger>
-		)
-	}
-}
+const Tooltips = () => 
+	<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Hit the button as many times throughout Election Day you need to.</Tooltip>}>
+		<span className="d-inline-block">
+			<Button className="button-class" disabled style={{ pointerEvents: 'none' }}>
+				i
+			</Button>
+		</span>
+	</OverlayTrigger>
 
 export default Tooltips;
