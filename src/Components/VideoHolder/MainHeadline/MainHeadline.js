@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Col from 'react-bootstrap/Col';
-//import {Animated} from "react-animated-css";
 import "./MainHeadline.css";
 
 class MainHeadline extends Component {
