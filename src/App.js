@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import Wrapper from "./Components/Wrapper/Wrapper";
 import Header from "./Components/Header/Header";
 import VideoHolder from "./Components/VideoHolder/VideoHolder";
-import Video2 from "./Components/Video2/Video2";
 import MainCopy from "./Components/MainCopy/MainCopy";
 import Credits from "./Components/Credits/Credits";
 import Artists from "./Components/Artists/Artists";
