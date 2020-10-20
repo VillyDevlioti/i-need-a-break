@@ -41,3 +41,23 @@
 .video-react .video-react-big-play-button {
   visibility: hidden;
 }
+
+.shuffle-button{
+  position: absolute;
+  width: 10vw;
+  height: 6vw;
+  top: 2vw;
+  right: 2vw;
+  z-index: 10;
+}
+
+.btn-primary.shuffle-button {
+  background-color:rgba(0,0,0,0);
+  border: 0px;
+}
+
+.btn-primary.shuffle-button:hover, .btn-primary.shuffle-button:active, .btn-primary.shuffle-button:target, .btn-primary.shuffle-button:active {
+  background-color: rgba(155, 207, 255, 0.5);
+  color: white;
+}
+
