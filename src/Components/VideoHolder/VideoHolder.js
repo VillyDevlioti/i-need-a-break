@@ -47,26 +47,14 @@ class VideoHolder extends Component {
     randomNumber = () => {
         console.log("animations json file length: ", this.state.animations.length);
         let videoChoice = Math.floor(Math.random() * this.state.animations.length) + 1;
-        console.log("next video up is: ", videoChoice)
         return videoChoice;
 
     }
 
-    //self explanatory
-    selectRandomAnimation = (playNextVideo) => {
-        //select random number
-        let nextVideo = this.randomNumber();
-
-        //play the video whose id corresponds to the random number
-        this.state.animations.includes(nextVideo)
-
-        //after video ends make button visible again
-        this.toggleStates();
-
-    }
-
     render () {
-        //let videoChoice = this.props.videoChoice;  
+        let videoChoice = this.randomNumber(); 
+        
+        console.log("next video up: ", videoChoice); 
         return (
             <Row className="video-row video-text">
                 {/*Shuffle Button Code*/}
@@ -74,10 +62,18 @@ class VideoHolder extends Component {
                     {!this.state.isButtonHidden && <ShuffleButton />} {/* only render button when video is not playing */}
                 </Button>
                 <Tooltips />
-                <Player playsInline poster="/assets/poster.png" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
+                {
+                    this.state.animations.filter(videoId => videoId.id === videoChoice).map(filteredVideo => (
+                        <Player playsInline src={filteredVideo.source}>
+                            {console.log(filteredVideo.source)}
+                            <ControlBar disableCompletely={true} className="my-class" />
+                        </Player>
+                    ))
+                } 
+{/*                 <Player playsInline poster="/assets/poster.png" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
                     <ControlBar disableCompletely={true} className="my-class" />
                 </Player>
-                
+                 */}
             </Row>
         );
     }
