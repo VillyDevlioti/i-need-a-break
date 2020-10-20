@@ -16,8 +16,8 @@ class VideoHolder extends Component {
             playNextVideo: true,
             videoId: "",
             videoSrc: "",
-            author: "",
-            animations
+            author: "", 
+            showHeadline: false // variable to hide headline
         }
         this.handleClick = this.handleClick.bind(this);
       }
@@ -27,6 +27,7 @@ class VideoHolder extends Component {
         this.setState({
             playNextVideo: true
         })
+        //make a function to also make headline disappear
         this.selectRandomAnimation (this.state.playNextVideo);
     }
     
@@ -35,12 +36,14 @@ class VideoHolder extends Component {
         let randomChoice = 0; // ancillary variable to help us change the state
         let nextVideo = ""; //ancillary variable that will store the next video
         let authorName = ""; //ancillary variable to store intermediate results
-        let ceiling = animations.length; // reading from the file
-        console.log("ceiling is: ", ceiling) // control point
+        let videoQueueLength = animations.length; // reading from the file
+        console.log("ceiling is: ", videoQueueLength) // control point
 
         if (playNextVideo) { // has the button been clicked? If yes
-            randomChoice = (Math.floor(Math.random() * ceiling)) + 1; //assign a new random choice for the video
+            randomChoice = (Math.floor(Math.random() * videoQueueLength)) + 1; //assign a new random choice for the video
             console.log("next video up: ", randomChoice);
+//use map to read from file, based on randomChoice. Feed that data into the html return below
+
 //            nextVideo = this.animations[randomChoice].source; //pick the next video
 //            authorName = animations[randomChoice].author; //assign the author for credit
             this.setState({
@@ -52,6 +55,7 @@ class VideoHolder extends Component {
         }
         else { //else bye bye
             console.log("no buttons clicked");
+            //add a function to make headline appear
             return;
         }
     }

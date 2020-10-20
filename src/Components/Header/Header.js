@@ -10,7 +10,7 @@ class Header extends Component {
         'Bloodshot eyes from late-night Twitter binges?', 'Desperate for “the issues” to be resolved? 🙃 '];
         return (
                 <Row className="header-row header-text">
-                    <TextScroll mode="horizontal" text={text} speed={2500} />
+                    <TextScroll mode="horizontal" text={text} speed={2000} />
                 </Row>
         )
     }
