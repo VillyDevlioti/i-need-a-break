@@ -45,15 +45,13 @@ class VideoHolder extends Component {
     }
 
     randomNumber = () => {
-        console.log("animations json file length: ", this.state.animations.length);
         let videoChoice = Math.floor(Math.random() * this.state.animations.length) + 1;
         return videoChoice;
-
     }
 
     render () {
         let videoChoice = this.randomNumber(); 
-        
+
         console.log("next video up: ", videoChoice); 
         return (
             <Row className="video-row video-text">
@@ -64,7 +62,7 @@ class VideoHolder extends Component {
                 <Tooltips />
                 {
                     this.state.animations.filter(videoId => videoId.id === videoChoice).map(filteredVideo => (
-                        <Player playsInline src={filteredVideo.source}>
+                        <Player playsInline autoPlay src={filteredVideo.source} id={filteredVideo.id} >
                             {console.log(filteredVideo.source)}
                             <ControlBar disableCompletely={true} className="my-class" />
                         </Player>
