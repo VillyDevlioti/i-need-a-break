@@ -1,7 +1,6 @@
   .header-row {
-    margin: 0%;
+    margin: 0;
     background: linear-gradient(180deg, #F0FF92 0%, #9BCFFF 49.48%, #F4E7D7 100%); 
-    width: 105%;
   }
 
   .header-text {
