@@ -1,6 +1,6 @@
 .d-inline-block {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     left: 5vw;
     top: 45vw;
 }
@@ -12,14 +12,14 @@
     font-family: "BNRomaineRegular";
     font-size: 1.5vw;
     line-height: 1.5vw;
-    z-index: 1;
+    z-index: 4;
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    color: #000!important;
+    color: #fff!important;
     text-align: center;
-    background-color:#fff!important;
-    border-color: #fff!important;
+    background-color:#000!important;
+    border-color: #000!important;
     border-radius: 5.2vw!important;
     padding: 0.4vw 1vw!important;
 }
