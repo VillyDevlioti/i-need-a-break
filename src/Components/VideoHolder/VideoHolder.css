@@ -1,7 +1,7 @@
 .video-row {
     width: auto;
     position: relative;
-    margin-top: -14px;
+    margin-top: -15px;
   }
 
 .video-react-icon-play-arrow:before, .video-react .video-react-bezel .video-react-bezel-icon-play:before, .video-react .video-react-play-control:before, .video-react .video-react-big-play-button:before {
@@ -31,6 +31,7 @@ video {
   visibility: visible;
 }
 
-img {
+.poster-image {
   width: 100%; 
+  opacity: 0.12;
 }
