@@ -13,6 +13,7 @@ class VideoHolder extends Component {
         this.state = {
             //variables which control video function and DOM elements
             isButtonHidden: false, //variable to render button
+            isTooltipHidden: false, //variable to render tooltip
             isVideoHidden: true, //variable to render video 
             videoChoice: 0,
 
@@ -33,7 +34,9 @@ class VideoHolder extends Component {
     
     //trigger function 
     handleClick = () => {
+        //generate random number
         this.randomNumber();
+        
         //toggle the state of the 'I Need a Break' Button
         this.toggleStates();
     }
@@ -41,6 +44,7 @@ class VideoHolder extends Component {
     toggleStates = () => {
         this.setState({
             isButtonHidden: !this.state.isButtonHidden,
+            isTooltipHidden: !this.state.isTooltipHidden,
             isVideoHidden: !this.state.isVideoHidden
         })
     }
@@ -60,7 +64,7 @@ class VideoHolder extends Component {
                 <Button type="button" className="shuffle-button" onClick = {() => this.handleClick()}>
                     {!this.state.isButtonHidden && <ShuffleButton />} {/* only render button when video is not playing */}
                 </Button>
-                {<Tooltips />}
+                {!this.state.isTooltipHidden && <Tooltips />}
                 {
                     this.state.isVideoHidden && <img src="/videos/poster1.png" alt="poster1" />
                 }

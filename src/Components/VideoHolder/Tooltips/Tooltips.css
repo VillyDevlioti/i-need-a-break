@@ -1,8 +1,8 @@
 .d-inline-block {
     position: absolute;
     z-index: 1;
-    left: 2vw;
-    top: 45vw;
+    left: 5vw;
+    top: 55vw;
 }
 
 #tooltip-disabled .tooltip-inner {
@@ -32,6 +32,6 @@
     visibility: hidden!important;
 }
 
-.button-class {
+.d-inline-block > .button-class {
     font-size: 1vw;
 }

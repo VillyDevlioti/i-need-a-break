@@ -30,3 +30,7 @@ video {
   background-color: #000;
   visibility: visible;
 }
+
+img {
+  width: 100%; 
+}
