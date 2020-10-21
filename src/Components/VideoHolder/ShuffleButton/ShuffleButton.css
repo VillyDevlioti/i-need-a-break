@@ -43,6 +43,11 @@
       .button-unit { 
         width: 35vw;
         height: 35vw;
+        right: 32vw;
       } 
+      .button-text {
+        left: 6.7vw;
+
+      }
     } 
   }
