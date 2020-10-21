@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 1;
     left: 5vw;
-    top: 55vw;
+    top: 45vw;
 }
 
 #tooltip-disabled .tooltip-inner {

@@ -5,18 +5,16 @@
     font-weight: 400;
     color: #0038FF;
     font-family: "BNRomaineRegular";
-    font-size: 18px;
-    line-height: 17px;
     text-transform: capitalize;
     padding: 5% 5%;
 }
 
 .bigger-credit {
-    font-size: 36px;
-    line-height: 35px;
+    font-size: 3.5vw;
+    line-height: 3.6vw;
 }
 
 .small-credit {
-    font-size: 24px;
-    line-height: 23px;
+    font-size: 2vw;
+    line-height: 2.1vw;
 }

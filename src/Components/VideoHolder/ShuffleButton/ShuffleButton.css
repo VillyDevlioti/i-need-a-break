@@ -37,3 +37,12 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+      .button-unit { 
+        width: 35vw;
+        height: 35vw;
+      } 
+    } 
+  }
