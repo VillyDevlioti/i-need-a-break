@@ -6,8 +6,8 @@ class ShuffleButton extends Component {
     render (){
         return (
             <div className="button-unit">
-                <p className="button-text">I need a break</p>  
-                <img className="button-image" src={BreakButton}  />
+                <p className="button-text">A Momentary Lapse</p>  
+                <img className="button-image" alt="I need a break button" src={BreakButton}  />
             </div>
         )
     }

@@ -1,12 +1,14 @@
 [
     {
         "id": 1,
-        "source": "https://github.com/VillyDevlioti/i-need-a-break/blob/main/src/videos/video1.mp4",
-        "author": "Name 1"
+        "source": "/videos/video1.mp4",
+        "author": "Name 1", 
+        "type": "video/mp4"
     },
     {
         "id": 2,
-        "source": "https://github.com/VillyDevlioti/i-need-a-break/blob/main/src/videos/video2.mp4",
-        "author": "Name 2"
+        "source": "/videos/video1.mp4",
+        "author": "Name 2", 
+        "type": "video/mp4"
     }
 ]

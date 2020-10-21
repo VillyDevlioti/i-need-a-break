@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
-import { Player, ControlBar } from 'video-react';
 import "./VideoHolder.css";
-//import MainHeadline from "./MainHeadline/MainHeadline";
 import Tooltips from './Tooltips/Tooltips.js'
 import animations from  '../../data.json'
 import ShuffleButton from './ShuffleButton/ShuffleButton.js'
@@ -15,63 +13,62 @@ class VideoHolder extends Component {
         this.state = {
             //variables which control video function and DOM elements
             isButtonHidden: false, //variable to render button
-            isVideoHidden: true, // variable to render video player
+            isVideoHidden: true, //variable to render video 
+            videoChoice: 0,
 
             //variables which control video information to show to DOM
             videoId: "",
             videoSrc: "",
             author: "",   
             
-            //json reading variable
+            //json-reading variable
             animations
         }
         this.handleClick = this.handleClick.bind(this);
       }
     
+    componentDidMount = () => {
+        this.randomNumber();
+    }
+    
     //trigger function 
     handleClick = () => {
+        this.randomNumber();
         //toggle the state of the 'I Need a Break' Button
-        this.toggleStates(this.setState.isButtonHidden);
-
-        //make a function to also make headline disappear
-        //this.selectRandomAnimation (this.state.playNextVideo);
+        this.toggleStates();
     }
     
     toggleStates = () => {
         this.setState({
             isButtonHidden: !this.state.isButtonHidden,
+            isVideoHidden: !this.state.isVideoHidden
         })
-        console.log("is it hidden?: ", this.state.isButtonHidden);
     }
 
     randomNumber = () => {
-        let videoChoice = Math.floor(Math.random() * this.state.animations.length) + 1;
-        return videoChoice;
+        let choice = Math.floor(Math.random() * this.state.animations.length) + 1
+        this.setState({
+            videoChoice: choice
+        }) 
+        console.log("Next video up: ", this.state.videoChoice);
     }
 
     render () {
-        let videoChoice = this.randomNumber(); 
-
-        console.log("next video up: ", videoChoice); 
         return (
-            <Row className="video-row video-text">
+            <Row className="video-row">
                 {/*Shuffle Button Code*/}
                 <Button type="button" className="shuffle-button" onClick = {() => this.handleClick()}>
                     {!this.state.isButtonHidden && <ShuffleButton />} {/* only render button when video is not playing */}
                 </Button>
-                <Tooltips />
+                {<Tooltips />}
                 {
-                    this.state.animations.filter(videoId => videoId.id === videoChoice).map(filteredVideo => (
-                        <Player playsInline autoPlay src={filteredVideo.source} id={filteredVideo.id} >
-                            {console.log(filteredVideo.source)}
-                            <ControlBar disableCompletely={true} className="my-class" />
-                        </Player>
-                    ))
-                } 
-{/*                 <Player playsInline poster="/assets/poster.png" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
-                    <ControlBar disableCompletely={true} className="my-class" />
-                </Player>
-                 */}
+                    this.state.isVideoHidden && <img src="/videos/poster1.png" alt="poster1" />
+                }
+                {
+                    !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
+                        <video playsInline id={filteredVideo.id} preload autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
+                    ))          
+                }
             </Row>
         );
     }
