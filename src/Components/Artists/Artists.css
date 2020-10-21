@@ -1,4 +1,4 @@
-.credits-row{
+.artists-row{
     width: auto;
     text-align: left;
     font-style: normal;
@@ -10,11 +10,11 @@
 }
 
 .bigger-credit {
-    font-size: 3.5vw;
-    line-height: 3.6vw;
+    font-size: 35px;
+    line-height: 36px;
 }
 
-.small-credit {
-    font-size: 2vw;
-    line-height: 2.1vw;
+.smaller-credit {
+    font-size: 23px;
+    line-height: 24px;
 }
