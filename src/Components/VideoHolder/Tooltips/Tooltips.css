@@ -16,10 +16,10 @@
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    color: #000!important;
+    color: #fff!important;
     text-align: center;
-    background-color:#fff!important;
-    border-color: #fff!important;
+    background-color:#000!important;
+    border-color: #000!important;
     border-radius: 5.2vw!important;
     padding: 0.4vw 1vw!important;
 }
