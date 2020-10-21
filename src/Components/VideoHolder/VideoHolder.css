@@ -23,3 +23,10 @@
 .shuffle-button {
   visibility:hidden;
 }
+
+video {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  visibility: visible;
+}
