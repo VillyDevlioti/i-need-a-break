@@ -5,14 +5,15 @@
     font-weight: 400;
     color: #0038FF;
     font-family: "BNRomaineRegular";
+    padding: 5% 5%;
 }
 
-.bigger-credit {
-    font-size: 10vw;
-    line-height: 11vw;
+.big-credit {
+    font-size: 35px;
+    line-height: 40px;
 }
 
 .small-credit {
-    font-size: 3vw;
-    line-height: 4vw;
+    font-size: 23px;
+    line-height: 28px;
 }

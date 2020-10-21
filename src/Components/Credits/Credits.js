@@ -6,17 +6,17 @@ import "./Credits.css";
 
 const Credits = () => 
     <Row className="credits-row">
-        <Col> 
+        <Col lg={4}> 
             <span className="small-credit">Ideas and Words by</span><br /> 
-            <span className="bigger-credit">Jennifer Page</span>
+            <span className="big-credit">Jennifer Page</span>
         </Col>
-        <Col> 
+        <Col lg={4}> 
             <span className="small-credit">Design by</span><br /> 
-            <span className="bigger-credit">Phuong Nguyen</span>
+            <span className="big-credit">Phuong Nguyen</span>
         </Col>
-        <Col> 
+        <Col lg={4}> 
             <span className="small-credit">Development by</span><br /> 
-            <span className="bigger-credit">Villy Devlioti</span>
+            <span className="big-credit">Villy Devlioti</span>
         </Col>
     </Row>
 

@@ -5,7 +5,7 @@ import "./Artists.css";
 
 
 const Artists = () => 
-    <Row className="credits-row">
+    <Row className="artists-row">
         <Col md={3}> 
             <span className="smaller-credit">Presented works by</span>
             <p></p>
