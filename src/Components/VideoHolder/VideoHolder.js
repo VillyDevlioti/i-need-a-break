@@ -36,7 +36,7 @@ class VideoHolder extends Component {
     handleClick = () => {
         //generate random number
         this.randomNumber();
-        
+
         //toggle the state of the 'I Need a Break' Button
         this.toggleStates();
     }
@@ -66,7 +66,7 @@ class VideoHolder extends Component {
                 </Button>
                 {!this.state.isTooltipHidden && <Tooltips />}
                 {
-                    this.state.isVideoHidden && <img src="/videos/poster1.png" alt="poster1" />
+                    this.state.isVideoHidden && <img class="poster-image" src="/videos/poster1.png" alt="poster1" />
                 }
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
