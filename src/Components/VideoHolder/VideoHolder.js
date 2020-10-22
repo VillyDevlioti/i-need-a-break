@@ -12,10 +12,10 @@ class VideoHolder extends Component {
         super(props)
         this.state = {
             //variables which control video function and DOM elements
-            isButtonHidden: false, //variable to render button
             isTooltipHidden: false, //variable to render tooltip
             isVideoHidden: true, //variable to render video 
             videoChoice: 0,
+            btnAnimation: "animate__animated animate__tada", //button animation 
 
             //variables which control video information to show to DOM
             videoId: "",
@@ -42,11 +42,12 @@ class VideoHolder extends Component {
     }
     
     toggleStates = () => {
+        this.state.btnAnimation === "animate__animated animate__tada" ? this.setState({btnAnimation: "animate__animated animate__bounceOut"}) : this.setState({btnAnimation: "animate__animated animate__tada"});
         this.setState({
-            isButtonHidden: !this.state.isButtonHidden,
             isTooltipHidden: !this.state.isTooltipHidden,
-            isVideoHidden: !this.state.isVideoHidden
-        })
+            isVideoHidden: !this.state.isVideoHidden,
+        });
+        
     }
 
     randomNumber = () => {
@@ -58,11 +59,13 @@ class VideoHolder extends Component {
     }
 
     render () {
+        console.log("animation: ", this.state.btnAnimation)
         return (
             <Row className="video-row">
                 {/*Shuffle Button Code*/}
                 <Button type="button" className="shuffle-button" onClick = {() => this.handleClick()}>
-                    {!this.state.isButtonHidden && <ShuffleButton />} {/* only render button when video is not playing */}
+                    {/*!this.state.isButtonHidden && <ShuffleButton />} {/* only render button when video is not playing */}
+                    <ShuffleButton animation={this.state.btnAnimation} />
                 </Button>
                 {!this.state.isTooltipHidden && <Tooltips />}
                 {
@@ -70,7 +73,7 @@ class VideoHolder extends Component {
                 }
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
-                        <video playsInline id={filteredVideo.id} preload autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
+                        <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
                     ))          
                 }
             </Row>

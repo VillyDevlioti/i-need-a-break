@@ -4,8 +4,9 @@ import './ShuffleButton.css'
 
 class ShuffleButton extends Component {
     render (){
+        let animation = this.props.animation;
         return (
-            <div className="button-unit">
+            <div className={`button-unit ${animation}`}>
                 <p className="button-text">A Momentary Lapse</p>  
                 <img className="button-image" alt="I need a break button" src={BreakButton}  />
             </div>

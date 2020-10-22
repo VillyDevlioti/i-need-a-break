@@ -8,7 +8,6 @@ class Artists extends Component {
 render () {
     return (
         <div>
-            {/*<Col lg={4} className="smaller-credit">Presented works by</Col>*/}
             <Row className="artists-row">
                 <Col md={4}>
                     <span className="smaller-credit">Presented works by </span> <br />
