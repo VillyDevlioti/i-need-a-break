@@ -10,8 +10,9 @@
         "source": "/videos/pulsing heart.mp4",
         "author": "Alex McLeod", 
         "type": "video/mp4"
-    },   {
-        "id": 2,
+    },   
+    {
+        "id": 3,
         "source": "/videos/tangold.mp4",
         "author": "Alex McLeod", 
         "type": "video/mp4"
