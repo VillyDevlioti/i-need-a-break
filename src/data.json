@@ -1,14 +1,19 @@
 [
     {
         "id": 1,
-        "source": "/videos/video1.mp4",
-        "author": "Name 1", 
+        "source": "/videos/landry3.mp4",
+        "author": "Alex McLeod", 
         "type": "video/mp4"
     },
     {
         "id": 2,
-        "source": "/videos/video1.mp4",
-        "author": "Name 2", 
+        "source": "/videos/pulsing heart.mp4",
+        "author": "Alex McLeod", 
+        "type": "video/mp4"
+    },   {
+        "id": 2,
+        "source": "/videos/tangold.mp4",
+        "author": "Alex McLeod", 
         "type": "video/mp4"
     }
 ]
