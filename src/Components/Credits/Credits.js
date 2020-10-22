@@ -8,15 +8,15 @@ const Credits = () =>
     <Row className="credits-row">
         <Col lg={4}> 
             <span className="small-credit">Ideas and Words by</span><br /> 
-            <span className="big-credit">Jennifer Page</span>
+            <span className="big-credit"><a href="www.jennpage.work" target="_blank" rel="noopener noreferrer">Jennifer Page</a></span>
         </Col>
         <Col lg={4}> 
             <span className="small-credit">Design by</span><br /> 
-            <span className="big-credit">Phuong Nguyen</span>
+            <span className="big-credit"><a href="https://phuongnguyen.co/" target="_blank" rel="noopener noreferrer">Phuong Nguyen</a></span>
         </Col>
         <Col lg={4}> 
             <span className="small-credit">Development by</span><br /> 
-            <span className="big-credit">Villy Devlioti</span>
+            <span className="big-credit"><a href="https://www.villywho.com/" target="_blank" rel="noopener noreferrer">Villy Devlioti</a></span>
         </Col>
     </Row>
 
