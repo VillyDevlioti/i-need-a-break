@@ -25,7 +25,8 @@
 }
 
 video {
-  width: auto;
+  height: 100vh;
+  width: 100vw;
   position: relative;
   background-color: #000;
   visibility: visible;
