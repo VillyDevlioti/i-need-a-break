@@ -81,7 +81,9 @@ class VideoHolder extends Component {
                 }
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
-                        <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
+                     /*<video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} /> */
+                     <embed playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
+                     
                     ))       
                 }
                 <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={this._onReady}  />
