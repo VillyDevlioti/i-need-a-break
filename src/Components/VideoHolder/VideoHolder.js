@@ -17,12 +17,6 @@ class VideoHolder extends Component {
             isVideoHidden: true, //variable to render video 
             videoChoice: 0,
             btnAnimation: "animate__animated animate__tada", //button animation 
-
-            //variables which control video information to show to DOM
-            videoId: "",
-            videoSrc: "",
-            author: "",   
-            
             //json-reading variable
             animations
         }
@@ -74,8 +68,6 @@ class VideoHolder extends Component {
                 }
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
-                     /*<video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} /> */
-                     /*<iframe id={filteredVideo.id} type="text/html" src={filteredVideo.source} frameborder="0" allow="fullscreen" onEnd = {() => this.toggleStates()}> </iframe>*/
                      <ReactPlayer 
                         class="video-player" 
                         height="100vh" 
@@ -89,7 +81,7 @@ class VideoHolder extends Component {
                                 youtube: {
                                     playerVars: { 
                                         showinfo: 0,
-                                        end: 10, 
+                                        end: 20, 
                                         iv_load_policy: 3, 
                                         disablekb: 1, 
                                         modestbranding: 1

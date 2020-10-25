@@ -1,7 +1,8 @@
 .video-row {
     width: auto;
     position: relative;
-  }
+    margin-top: -10px;
+}
 
 .video-react-icon-play-arrow:before, .video-react .video-react-bezel .video-react-bezel-icon-play:before, .video-react .video-react-play-control:before, .video-react .video-react-big-play-button:before {
     visibility: hidden!important;
