@@ -25,8 +25,8 @@
 }
 
 video, embed, iframe, .video-player {
-  height: 100vh;
-  width: 100vw;
+  height: 100vh!important;
+  width: 100vw!!important;
   position: relative;
   background-color: #000;
   visibility: visible;
