@@ -75,8 +75,8 @@ class VideoHolder extends Component {
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
                      /*<video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} /> */
-                     <iframe id={filteredVideo.id} type="text/html" src={filteredVideo.source} frameborder="0" allow="fullscreen" onEnd = {() => this.toggleStates()}> </iframe>
-                     /*<ReactPlayer class="video-player" height="100vh" width="100vw" id={filteredVideo.id} url={filteredVideo.source} playing={true} controls={false} onEnded ={() => this.toggleStates()} />*/
+                     /*<iframe id={filteredVideo.id} type="text/html" src={filteredVideo.source} frameborder="0" allow="fullscreen" onEnd = {() => this.toggleStates()}> </iframe>*/
+                     <ReactPlayer class="video-player" height="100vh" width="100%" id={filteredVideo.id} url={filteredVideo.source} playing={true} controls={false} onEnded ={() => this.toggleStates()} />
                     ))       
                 }
             </Row>
