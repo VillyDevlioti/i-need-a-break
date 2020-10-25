@@ -61,13 +61,6 @@ class VideoHolder extends Component {
 
     render () {
         console.log("animation: ", this.state.btnAnimation)
-        const opts = {
-            playerVars: {
-              // https://developers.google.com/youtube/player_parameters
-              autoplay: 1,
-              controls: 0, 
-            }
-          };
         return (
             <Row className="video-row">
                 {/*Shuffle Button Code*/}
@@ -82,11 +75,10 @@ class VideoHolder extends Component {
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
                      /*<video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} /> */
-                     <embed playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
+                     <iframe id={filteredVideo.id} src={filteredVideo.source} onEnd = {() => this.toggleStates()}> </iframe>
                      
                     ))       
                 }
-                <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={this._onReady}  />
             </Row>
         );
     }
