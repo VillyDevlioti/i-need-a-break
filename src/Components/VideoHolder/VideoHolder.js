@@ -4,8 +4,8 @@ import Button from 'react-bootstrap/Button';
 import "./VideoHolder.css";
 import Tooltips from './Tooltips/Tooltips.js'
 import animations from  '../../data.json'
-import ShuffleButton from './ShuffleButton/ShuffleButton.js'
-import YouTube from 'react-youtube';
+import ShuffleButton from './ShuffleButton/ShuffleButton.js' 
+import ReactPlayer from 'react-player'
 
 class VideoHolder extends Component {
     //Initialize stuff
@@ -75,8 +75,8 @@ class VideoHolder extends Component {
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
                      /*<video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} /> */
-                     <iframe id={filteredVideo.id} src={filteredVideo.source} onEnd = {() => this.toggleStates()}> </iframe>
-                     
+                     /*<iframe id={filteredVideo.id} src={filteredVideo.source} onEnd = {() => this.toggleStates()}> </iframe>*/
+                     <ReactPlayer class="video-player" id={filteredVideo.id} url={filteredVideo.source} playing={true} onEnded ={() => this.toggleStates()} />
                     ))       
                 }
             </Row>

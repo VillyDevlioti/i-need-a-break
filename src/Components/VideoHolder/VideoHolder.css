@@ -24,7 +24,7 @@
   visibility:hidden;
 }
 
-video, embed, iframe {
+video, embed, iframe, .video-player {
   height: 100vh;
   width: 100vw;
   position: relative;

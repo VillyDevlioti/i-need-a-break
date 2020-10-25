@@ -1,24 +1,6 @@
-[
-    {
-        "id": 1,
-        "source": "/videos/landry3.mp4",
-        "author": "Alex McLeod", 
-        "type": "video/mp4"
-    },
-    {
-        "id": 2,
-        "source": "/videos/pulsing heart.mp4",
-        "author": "Alex McLeod", 
-        "type": "video/mp4"
-    },   
-    {
-        "id": 3,
-        "source": "/videos/tangold.mp4",
-        "author": "Alex McLeod", 
-        "type": "video/mp4"
-    }, 
-    {   "id": 4,
-        "source": "https://www.youtube.com/embed/5PIBMLvcAzc?controls=0&disablekb&fs=0&modestbranding=1",
+[ 
+    {   "id": 1,
+        "source": "https://www.youtube.com/watch?v=5PIBMLvcAzc",
         "author": "Alex McLeod"
     }
 ]
