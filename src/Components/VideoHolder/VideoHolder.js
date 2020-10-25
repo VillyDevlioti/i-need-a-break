@@ -64,7 +64,8 @@ class VideoHolder extends Component {
         const opts = {
             playerVars: {
               // https://developers.google.com/youtube/player_parameters
-              autoplay: 1
+              autoplay: 1,
+              controls: 0, 
             }
           };
         return (
@@ -83,7 +84,7 @@ class VideoHolder extends Component {
                         <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
                     ))       
                 }
-                <YouTube videoId="2g811Eo7K8U" opts={opts} disablekb controls={0} onReady={this._onReady}  />
+                <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={this._onReady}  />
             </Row>
         );
     }

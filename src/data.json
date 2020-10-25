@@ -20,6 +20,6 @@
     {   "id": 4,
         "source": "https://www.youtube.com/watch?v=K7RmhU4m2no",
         "author": "Alex McLeod", 
-        "type": "video/youtube"
+        "type": "text/html"
     }
 ]
