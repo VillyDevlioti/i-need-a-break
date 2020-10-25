@@ -7,22 +7,20 @@ import MainCopy from "./Components/MainCopy/MainCopy";
 import Credits from "./Components/Credits/Credits";
 import Artists from "./Components/Artists/Artists";
 import Footer from "./Components/Footer/Footer";
+import animations from  './data.json'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'video-react/dist/video-react.css';
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
+  constructor(props){
+    super(props)
     this.state = {
-      videoChoice : 0
-    };
-    //this.callTwitterApi = this.callTwitterApi.bind(this);
+        //json-reading variable
+        animations
+    }
   }
-
   render() {
-    const stream = 5;
+    //this.state.animations
     return (
       <div className="App">
         <Wrapper>

@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import "./VideoHolder.css";
 import Tooltips from './Tooltips/Tooltips.js'
 import animations from  '../../data.json'
-import ShuffleButton from './ShuffleButton/ShuffleButton.js'
+import ShuffleButton from './ShuffleButton/ShuffleButton.js' 
+import ReactPlayer from 'react-player'
 
 class VideoHolder extends Component {
     //Initialize stuff
@@ -16,12 +17,6 @@ class VideoHolder extends Component {
             isVideoHidden: true, //variable to render video 
             videoChoice: 0,
             btnAnimation: "animate__animated animate__tada", //button animation 
-
-            //variables which control video information to show to DOM
-            videoId: "",
-            videoSrc: "",
-            author: "",   
-            
             //json-reading variable
             animations
         }
@@ -73,8 +68,30 @@ class VideoHolder extends Component {
                 }
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
-                        <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
-                    ))          
+                     <ReactPlayer 
+                        class="video-player" 
+                        height="100vh" 
+                        width="100%" 
+                        id={filteredVideo.id} 
+                        url={filteredVideo.source} 
+                        playing={true} 
+                        controls={false} 
+                        config={
+                            {
+                                youtube: {
+                                    playerVars: { 
+                                        showinfo: 0,
+                                        end: 20, 
+                                        iv_load_policy: 3, 
+                                        disablekb: 1, 
+                                        modestbranding: 1
+                                    }
+                                }
+                            }
+                        } 
+                        onEnded ={() => this.toggleStates()} 
+                    />
+                    ))       
                 }
             </Row>
         );

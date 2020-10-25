@@ -1,8 +1,8 @@
 .video-row {
     width: auto;
     position: relative;
-    margin-top: -15px;
-  }
+    margin-top: -10px;
+}
 
 .video-react-icon-play-arrow:before, .video-react .video-react-bezel .video-react-bezel-icon-play:before, .video-react .video-react-play-control:before, .video-react .video-react-big-play-button:before {
     visibility: hidden!important;
@@ -24,9 +24,9 @@
   visibility:hidden;
 }
 
-video {
-  height: 100vh;
-  width: 100vw;
+video, embed, iframe, .video-player {
+  height: 100vh!important;
+  width: 100%!important;
   position: relative;
   background-color: #000;
   visibility: visible;
