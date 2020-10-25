@@ -18,7 +18,7 @@
         "type": "video/mp4"
     }, 
     {   "id": 4,
-        "source": "https://www.youtube.com/watch?v=5PIBMLvcAzc?controls=0&disablekb&fs=0&modestbranding=1",
+        "source": "https://www.youtube.com/embed/5PIBMLvcAzc?controls=0&disablekb&fs=0&modestbranding=1",
         "author": "Alex McLeod"
     }
 ]
