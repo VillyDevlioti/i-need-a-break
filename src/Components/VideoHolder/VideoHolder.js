@@ -61,12 +61,12 @@ class VideoHolder extends Component {
 
     render () {
         console.log("animation: ", this.state.btnAnimation)
-        const opts = {
-            height: '390',
-            width: '640',
+        const opts = {s
             playerVars: {
               // https://developers.google.com/youtube/player_parameters
               autoplay: 1,
+              controls: 0,
+              disablekb
             },
           };
         return (
