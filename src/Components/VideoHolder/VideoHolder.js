@@ -5,6 +5,7 @@ import "./VideoHolder.css";
 import Tooltips from './Tooltips/Tooltips.js'
 import animations from  '../../data.json'
 import ShuffleButton from './ShuffleButton/ShuffleButton.js'
+import YouTube from 'react-youtube';
 
 class VideoHolder extends Component {
     //Initialize stuff
@@ -73,8 +74,9 @@ class VideoHolder extends Component {
                 }
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
-                        <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
-                    ))          
+                        {/* <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} /> */}
+                        <YouTube videoId="K7RmhU4m2no" onEnd = {() =>this.toggleStates()}/>;
+                    ))       
                 }
             </Row>
         );
