@@ -61,13 +61,11 @@ class VideoHolder extends Component {
 
     render () {
         console.log("animation: ", this.state.btnAnimation)
-        const opts = {s
+        const opts = {
             playerVars: {
               // https://developers.google.com/youtube/player_parameters
-              autoplay: 1,
-              controls: 0,
-              disablekb
-            },
+              autoplay: 1
+            }
           };
         return (
             <Row className="video-row">
@@ -85,7 +83,7 @@ class VideoHolder extends Component {
                         <video playsInline id={filteredVideo.id} autoPlay src={filteredVideo.source} type={filteredVideo.type} onEnded = {() => this.toggleStates()} />
                     ))       
                 }
-                <YouTube videoId="2g811Eo7K8U" opts={opts} onReady={this._onReady}  />
+                <YouTube videoId="2g811Eo7K8U" opts={opts} disablekb controls={0} onReady={this._onReady}  />
             </Row>
         );
     }
