@@ -16,5 +16,10 @@
         "source": "/videos/tangold.mp4",
         "author": "Alex McLeod", 
         "type": "video/mp4"
+    }, 
+    {   "id": 4,
+        "source": "https://www.youtube.com/watch?v=K7RmhU4m2no",
+        "author": "Alex McLeod", 
+        "type": "video/mp4"
     }
 ]
