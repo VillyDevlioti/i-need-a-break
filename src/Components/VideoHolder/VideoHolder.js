@@ -81,7 +81,7 @@ class VideoHolder extends Component {
                                 youtube: {
                                     playerVars: { 
                                         showinfo: 0,
-                                        end: 20, 
+                                        end: 60, 
                                         iv_load_policy: 3, 
                                         disablekb: 1, 
                                         modestbranding: 1
