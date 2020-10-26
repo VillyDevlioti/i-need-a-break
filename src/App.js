@@ -6,6 +6,7 @@ import VideoHolder from "./Components/VideoHolder/VideoHolder";
 import MainCopy from "./Components/MainCopy/MainCopy";
 import Credits from "./Components/Credits/Credits";
 import Artists from "./Components/Artists/Artists";
+import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import animations from  './data.json'
 import './App.css';
@@ -29,6 +30,7 @@ class App extends Component {
             <MainCopy />
             <Credits />
             <Artists />
+            <About />
             <Footer />
           </Wrapper>
       </div>

@@ -1,17 +1,18 @@
 [ 
     {   "id": 1,
-        "source": "https://www.youtube.com/watch?v=0ER2GMrJ96M"
+        "source": "https://youtu.be/oPntI77jKT8",
+        "artist": "Cody Healey-Conelly"
     },
     {   "id": 2,
-        "source": "https://www.youtube.com/watch?v=PIWmKZZ33SA"
+        "source": "https://youtu.be/EdxBeXyDbpY",
+        "artist" : "Thomas Moore"
     }, 
     {   "id": 3,
-        "source": "https://www.youtube.com/watch?v=8M143iRrbgw"
+        "source": "https://youtu.be/JlORwwQDjeI",
+        "artist" : "Thomas Moore"
     }, 
     {   "id": 4,
-        "source": "https://www.youtube.com/watch?v=mIYzp5rcTvU"
-    }, 
-    {   "id": 5,
-        "source": "https://www.youtube.com/watch?v=y1dbbrfekAM"
-    }  
+        "source": "https://youtu.be/439EcLT1BME",
+        "artist" : "Thomas Moore"
+    } 
 ]
