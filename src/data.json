@@ -74,5 +74,13 @@
     {   "id": 20,
         "source": "https://youtu.be/L82AB01IIUs",
         "artist" : "Rory Scott"
+    },
+    {   "id": 21,
+        "source": "https://youtu.be/C70dhl90ofU",
+        "artist" : "Soojin Park"
+    },
+    {   "id": 22,
+        "source": "https://youtu.be/YXdLw0G-4tI",
+        "artist" : "Alex McLeod"
     }
 ]
