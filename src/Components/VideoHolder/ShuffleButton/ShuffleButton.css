@@ -17,7 +17,7 @@
 }
 
 .button-unit:hover {
-    filter: drop-shadow(10px 10px 4px rgba(100, 100, 100, 0.85));
+    filter: drop-shadow(10px 10px rgba(100, 100, 100, 1));
     display: block;
     top: 14.8vw;
     right: 52.5vw;
