@@ -8,7 +8,7 @@ const Credits = () =>
     <Row className="credits-row">
         <Col lg={4}> 
             <span className="small-credit">Ideas and Words by</span><br /> 
-            <span className="big-credit"><a href="www.jennpage.work" target="_blank" rel="noopener noreferrer">Jennifer Page</a></span>
+            <span className="big-credit"><a href="https://jennpage.work" target="_blank" rel="noopener noreferrer">Jennifer Page</a></span>
         </Col>
         <Col lg={4}> 
             <span className="small-credit">Design by</span><br /> 
