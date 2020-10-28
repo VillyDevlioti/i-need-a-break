@@ -24,7 +24,7 @@ render () {
                     <span className="bigger-credit"><a href="https://www.instagram.com/sniardrgs/" target="_blank" rel="noopener noreferrer">Sónia Rodrigues</a></span><br />
                     <span className="bigger-credit"><a href="https://www.instagram.com/hannahelainesmith/" target="_blank" rel="noopener noreferrer">Hannah Smith</a></span><br />
                     <span className="bigger-credit"><a href="https://www.instagram.com/rks_xo/" target="_blank" rel="noopener noreferrer">Rory Scott</a></span><br />
-                    <span className="bigger-credit"><a href="https://www.instagram.com/cari.sekendur/" target="_blank" rel="noopener noreferrer">Butter Studios</a></span><br />
+                    <span className="bigger-credit"><a href="https://www.instagram.com/butterstudio.co/" target="_blank" rel="noopener noreferrer">Butter Studio</a></span><br />
                 </Col>
                 <Col md={4}> 
                     <br />
