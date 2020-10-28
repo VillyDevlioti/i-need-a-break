@@ -18,5 +18,25 @@
     {   "id": 5,
         "source": "https://youtu.be/5zUZjdge49s",
         "artist" : "Rory Scott"
-    }  
+    },
+    {   "id": 6,
+        "source": "https://youtu.be/M7ThJ5HZibA",
+        "artist" : "Alex McLeod"
+    },
+    {   "id": 7,
+        "source": "https://youtu.be/tDI_TN4Cq5g",
+        "artist" : "Benjamin Jarier"
+    },
+    {   "id": 8,
+        "source": "https://youtu.be/mxu5O-T7GUU",
+        "artist" : "Bella Cologlu "
+    },
+    {   "id": 9,
+        "source": "https://youtu.be/WrwqtIxwbpQ",
+        "artist" : "Bella Cologlu"
+    },
+    {   "id": 10,
+        "source": "https://youtu.be/amKVHozh86A",
+        "artist" : "Hanna Smith"
+    }         
 ]
