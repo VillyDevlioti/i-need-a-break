@@ -24,7 +24,7 @@
         "artist" : "Alex McLeod"
     },
     {   "id": 7,
-        "source": "https://youtu.be/tDI_TN4Cq5g",
+        "source": "https://youtu.be/gK7vIJRGnRY",
         "artist" : "Benjamin Jarier"
     },
     {   "id": 8,
@@ -46,5 +46,21 @@
     {   "id": 13,
         "source": "https://youtu.be/o9vOes95YSs",
         "artist" : "Cari Sekendur / Butter Studio"
-    }                   
+    },
+    {   "id": 14,
+        "source": "https://youtu.be/9xlnpwmG5ZM",
+        "artist" : "Eugene Sharpe"
+    },
+    {   "id": 15,
+        "source": "https://youtu.be/sFbjEX4z6WQ",
+        "artist" : "Rad Mora"
+    },
+    {   "id": 16,
+        "source": "https://youtu.be/VYgnFuQu5wE",
+        "artist" : "Sonia Rodrigues"
+    },
+    {   "id": 17,
+        "source": "https://youtu.be/VvwSfNUSF38",
+        "artist" : "Candice Botelho Coelho"
+    }
 ]
