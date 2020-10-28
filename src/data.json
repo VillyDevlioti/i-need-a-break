@@ -62,5 +62,25 @@
     {   "id": 17,
         "source": "https://youtu.be/VvwSfNUSF38",
         "artist" : "Candice Botelho Coelho"
+    },
+    {   "id": 18,
+        "source": "https://youtu.be/BVW3h3AW4XA",
+        "artist" : "Qieer Wang"
+    },
+    {   "id": 19,
+        "source": "https://youtu.be/eRC_hl9YDsE",
+        "artist" : "Sabine Volkert"
+    },
+    {   "id": 20,
+        "source": "https://youtu.be/L82AB01IIUs",
+        "artist" : "Rory Scott"
+    },
+    {   "id": 21,
+        "source": "https://youtu.be/C70dhl90ofU",
+        "artist" : "Soojin Park"
+    },
+    {   "id": 22,
+        "source": "https://youtu.be/YXdLw0G-4tI",
+        "artist" : "Alex McLeod"
     }
 ]

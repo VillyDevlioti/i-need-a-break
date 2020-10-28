@@ -35,6 +35,6 @@ video, embed, iframe, .video-player {
 .poster-image {
   width: 100%;
   height: 50vw;
-  opacity: 0.1;
+  opacity: 1;
   z-index: 1;
 }

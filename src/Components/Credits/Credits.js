@@ -19,7 +19,7 @@ const Credits = () =>
             <span className="big-credit"><a href="https://www.villywho.com/" target="_blank" rel="noopener noreferrer">Villy Devlioti</a></span>
         </Col>
         <Col lg={4}> 
-            <span className="small-credit">Music by</span><br /> 
+            <span className="small-credit"><br/>Music by</span><br /> 
             <span className="big-credit"><a href="https://instagram.com/saxstar" target="_blank" rel="noopener noreferrer">Ian Young</a></span>
         </Col>
     </Row>
