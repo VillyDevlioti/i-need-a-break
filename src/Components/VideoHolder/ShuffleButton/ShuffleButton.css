@@ -19,7 +19,7 @@
 .button-unit:hover {
     filter: drop-shadow(10px 10px rgba(100, 100, 100, 1));
     display: block;
-    top: 14.8vw;
+    top: 14.6vw;
     right: 52.5vw;
 }
 
@@ -50,7 +50,7 @@
         right: 32vw;
       } 
       .button-unit:hover {
-        top: 14.8vw;
+        top: 14.6vw;
         right: 32.5vw;
       }
       .button-text {
