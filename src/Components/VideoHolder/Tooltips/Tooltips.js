@@ -5,7 +5,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import "./Tooltips.css";
 
 const Tooltips = () => 
-	<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Keep on hitting the button whenever you need to chill out.</Tooltip>}>
+	<OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Give yourself 1 minute away from the noise of 2020. Then, repeat until ready to get back to the world.</Tooltip>}>
 		<span className="d-inline-block">
 			<Button className="button-class" disabled style={{ pointerEvents: 'none' }}>
 				i
