@@ -1,0 +1,52 @@
+.next-button-unit {
+    width: 10vw;
+    height: 10vw;
+    visibility: visible;
+    position: relative;
+    z-index: 2;
+    top: -40vw;
+    right: -80vw;
+    display: block;
+}
+
+.next-button-image {
+    width: 10vw;
+    height: auto;
+}
+
+.next-button-text {
+    position: absolute;
+    text-align: center;
+    width: 5vw;
+    top: 4vw;
+    left: 2.3vw;
+    padding: 0.01vw 0.03vw;
+    color: white;
+    z-index: 5;
+    font-family: "MayenneSans-Regular";
+    color: #0038FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+      .button-unit { 
+        width: 35vw;
+        height: 35vw;
+        right: 32vw;
+      } 
+      .button-unit:hover {
+        top: 14.6vw;
+        right: 32.5vw;
+      }
+      .button-text {
+        left: 6.7vw;
+
+      }
+    } 
+  }
