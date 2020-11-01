@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import "./VideoHolder.css";
 import Tooltips from './Tooltips/Tooltips.js'
 import animations from  '../../data.json'
-import ShuffleButton from './ShuffleButton/ShuffleButton.js' 
+import ShuffleButton from './ShuffleButton/ShuffleButton.js'
+import NextButton from './NextButton/NextButton.js' 
 import ReactPlayer from 'react-player'
 
 class VideoHolder extends Component {
@@ -17,6 +18,7 @@ class VideoHolder extends Component {
             isVideoHidden: true, //variable to render video 
             videoChoice: 0,
             btnAnimation: "animate__animated animate__tada", //button animation 
+            nextBtnAnimation: "animate__animated animate__tada", //button animation 
             //json-reading variable
             animations
         }
@@ -33,6 +35,12 @@ class VideoHolder extends Component {
         this.randomNumber();
 
         //toggle the state of the 'I Need a Break' Button
+        this.toggleStates();
+    }
+
+    handleClickNext = () => {
+        //generate random number
+        this.randomNumber();
         this.toggleStates();
     }
     
@@ -66,6 +74,7 @@ class VideoHolder extends Component {
                 {
                     this.state.isVideoHidden && <img class="poster-image" src="/videos/background.gif" alt="background"/>
                 }
+                
                 {
                     !this.state.isVideoHidden && this.state.animations.filter(videoId => videoId.id === this.state.videoChoice).map(filteredVideo => (
                      <ReactPlayer 
@@ -91,8 +100,10 @@ class VideoHolder extends Component {
                         } 
                         onEnded ={() => this.toggleStates()} 
                     />
-                    ))       
+                    )) 
                 }
+                {!this.state.isVideoHidden && <Button type="button" className="shuffle-button" onClick = {() => this.handleClick()}>
+                <NextButton animation={this.state.nextBtnAnimation} onClick = {() => this.handleClickNext()}/> </Button>}
             </Row>
         );
     }
