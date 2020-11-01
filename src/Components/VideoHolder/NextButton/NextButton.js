@@ -6,11 +6,11 @@ import './NextButton.css'
 
 class NextButton extends Component {
     render (){
-        //let animation = this.props.animation;
+        let animation = this.props.animation;
         return (
 
             <span className="d-inline-block">
-            <div className="next-button-unit">
+            <div className={`next-button-unit ${animation}`}>
                 <p className="next-button-text">Start Over</p>  
                 <img className="next-button-image" alt="I need a break button" src={BreakButton}  />
             </div>

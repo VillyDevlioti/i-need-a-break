@@ -18,6 +18,7 @@ class VideoHolder extends Component {
             isVideoHidden: true, //variable to render video 
             videoChoice: 0,
             btnAnimation: "animate__animated animate__tada", //button animation 
+            nextBtnAnimation: "animate__animated animate__tada", //button animation 
             //json-reading variable
             animations
         }
@@ -102,7 +103,7 @@ class VideoHolder extends Component {
                     )) 
                 }
                 {!this.state.isVideoHidden && <Button type="button" className="shuffle-button" onClick = {() => this.handleClick()}>
-                <NextButton onClick = {() => this.handleClickNext()}/> </Button>}
+                <NextButton animation={this.state.nextBtnAnimation} onClick = {() => this.handleClickNext()}/> </Button>}
             </Row>
         );
     }
