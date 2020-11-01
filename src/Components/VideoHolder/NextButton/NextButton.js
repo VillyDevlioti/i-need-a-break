@@ -11,7 +11,7 @@ class NextButton extends Component {
 
             <span className="d-inline-block">
             <div className={`next-button-unit ${animation}`}>
-                <p className="next-button-text">Start Over</p>  
+                <p className="next-button-text">More Chill</p>  
                 <img className="next-button-image" alt="I need a break button" src={BreakButton}  />
             </div>
             </span>
